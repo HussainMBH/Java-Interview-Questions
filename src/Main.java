@@ -47,5 +47,38 @@ public class Main {
         buff.append(nam);
         System.out.println(buff.reverse());
 
+
+        String je = "Hussain";
+        int lng = je.length();
+
+        StringBuffer bfr = new StringBuffer();
+        bfr.append(je);
+        System.out.println(bfr.reverse());
+
+        String jer = "";
+        for (int i = lng -1; i>=0; i--){
+            jer = jer + je.charAt(i);
+        }
+        System.out.println(jer);
+        System.out.println();
+
+        //Number pattern
+        int pt[] = {1,2,3,4,5,6};
+        int ptln = pt.length;
+        int ptn = 0;
+        for(int i = 0; i<=pt.length; i++){
+           //ptn = pt[i];
+
+            System.out.println(ptn);
+        }
+
+        int rows = 5;
+        for(int i=rows; i>=1; --i){//for loop for row
+            for(int j=1; j<=i; ++j){//for loop for colum
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
 }
