@@ -22,5 +22,30 @@ public class Main {
             cha = cha + chararray[i];
         }
         System.out.println(cha);
+
+
+        int num[] = {1,2,3,4,5};
+
+        StringBuffer buf  = new StringBuffer();
+        buf.append(num);
+
+        System.out.print(buf.reverse());
+        System.out.println();
+
+        String nam = "Bahir";
+        int len = nam.length(); //Counting char length
+        String rev = ""; // starting variable
+
+        for(int i = len -1; i>=0; i--){
+            rev = rev + nam.charAt(i); //r + ri + rih + riha + rihaB
+        }
+        System.out.println(nam.length());
+        System.out.println(rev);
+        System.out.println();
+
+        StringBuffer buff = new StringBuffer();
+        buff.append(nam);
+        System.out.println(buff.reverse());
+
     }
 }
