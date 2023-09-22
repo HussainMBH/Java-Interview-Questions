@@ -72,8 +72,16 @@ public class Main {
             System.out.println(ptn);
         }
 
-        int rows = 5;
+        int rows = 10;
         for(int i=rows; i>=1; --i){//for loop for row
+            for(int j=1; j<=i; ++j){//for loop for colum
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        int row = 10;
+        for(int i=1; i<=row; ++i){//for loop for row
             for(int j=1; j<=i; ++j){//for loop for colum
                 System.out.print("*");
             }
