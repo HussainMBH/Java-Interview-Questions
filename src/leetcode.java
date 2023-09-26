@@ -4,8 +4,8 @@ public class leetcode {
     public static void main(String[] args){
 
         leetcode obj = new leetcode();
-        arrayquestions arqstn = new arrayquestions();
-        arqstn.arrayques();
+        mathsqstn1 arqstn = new mathsqstn1();
+
 
 
 
