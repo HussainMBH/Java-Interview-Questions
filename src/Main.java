@@ -1,5 +1,30 @@
 public class Main {
     public static void main(String[] args) {
+
+        int arr[] = {1, 2, 3, 4, 5};
+        System.out.println(arr[0]);
+        //assigned arr[0] to min because in arrays min number will start from 0 array position
+        int min = arr[0];
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] <min){
+                min = arr[i];
+            }
+
+        }
+        System.out.println(min);
+
+
+
+
+
+
+
+        arrayquestions arq = new arrayquestions();
+        arq.arrayques();
+
+
+
+
         StringBuffer name = new StringBuffer("Mohamed Bahir ");
         name = name.append("Hussain");
 
