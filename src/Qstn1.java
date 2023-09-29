@@ -6,6 +6,7 @@ public class Qstn1 {
         Qstn1 qstnobj = new Qstn1();
         qstnobj.stringvalue();
         qstnobj.integervalue();
+        qstnobj.Stringcount();
 
     }
 
@@ -28,6 +29,20 @@ public class Qstn1 {
             rev = (rev*10) + inrev;
         }
         System.out.println(rev);
+    }
+    public static int x;
+
+    public void Stringcount(){
+        String name = "Bahir Hussain";
+        int count = 0;
+        for(int i = 0; i<name.length(); i++){
+            if(name.charAt(i) != 'a'){
+                count++; //With space count letters only correctly
+            }
+            //count++; //without space it's enough
+        }
+        System.out.println(count);
+
     }
 
 }
