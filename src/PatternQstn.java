@@ -4,6 +4,7 @@ public class PatternQstn {
         objrtn.Starpatternfrwd();
         objrtn.boxpatter();
         objrtn.Starpatternrevrs();
+        objrtn.rightsiderec();
     }
 
     public void Starpatternfrwd(){
@@ -36,5 +37,16 @@ public class PatternQstn {
             System.out.println();
         }
         System.out.println();
+    }
+
+    int n = 5;
+    public void rightsiderec(){
+        for (int row = 0; row <2*n ; row++) {
+            int totalcolsinrow = row > n ? 2 * n - row: row;
+            for(int col = 0; col<totalcolsinrow; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
