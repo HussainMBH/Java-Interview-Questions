@@ -5,6 +5,82 @@ public class PatternQstn {
         objrtn.boxpatter();
         objrtn.Starpatternrevrs();
         objrtn.rightsiderec();
+        objrtn.boxpatrn();
+        objrtn.incrbox();
+        objrtn.decrbox();
+        objrtn.numincr();
+        objrtn.samenum();
+        objrtn.decstar();
+        objrtn.decnum();
+    }
+
+    public void decnum(){
+        System.out.println("Decrease number");
+        for(int i=0; i<6; i++){
+            for(int j=i; j>6; j--){
+                System.out.print(6-j+1 + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void decstar(){
+        System.out.println("Decrease star pattern");
+        for(int i=0; i<6; i++){
+            for(int j=i; j<6; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void samenum(){
+        for(int i=0; i<6; i++){
+            for(int j=0; j<i+1; j++){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void numincr(){
+        System.out.println("Number Increase");
+        for(int i=0; i<6; i++){
+            for(int j=0; j<i+1; j++){
+                System.out.print(j+1+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void decrbox(){
+        System.out.println("Decrease star patter");
+        for(int i=0; i<6; i++){
+            for(int j=i; j<6; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void incrbox(){
+        System.out.println("Increase star Pattern");
+        for(int i=0; i<6; i++){
+            for(int j=0; j<i+1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void boxpatrn(){
+        System.out.println("Box Pattern");
+        for(int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 
     public void Starpatternfrwd(){
