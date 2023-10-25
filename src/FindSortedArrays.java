@@ -3,26 +3,19 @@ public class FindSortedArrays {
     int UnSortedArray[] = {4,1,9,6,5};
     int l = SortedArray.length;
     int len = UnSortedArray.length;
-    public static void main(String[] args){
-        FindSortedArrays fndsrtary = new FindSortedArrays();
-        boolean SortedArrays = fndsrtary.SortedArrays();
-        if (SortedArrays) {
-            System.out.println("The array is sorted.");
-        } else {
-            System.out.println("The array is not sorted.");
-        }
-    }
-
-    public boolean SortedArrays(){
-        int SortedArray[] = {1, 2, 3, 4, 5, 6};
-        int l = SortedArray.length;
-        for(int i=1; i<l; i++){
-            if(SortedArray[i]>=SortedArray[i-1]){
-
+    static boolean isSorted(int arr[], int n){
+        for(int i=1; i<n; i++){
+            if(arr[i]<arr[i-1]){
+                return false;
             }
-            return false;
         }
         return true;
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {1, 2, 3, 4, 5}, n = 5;
+
+        System.out.println(isSorted(arr, n));
     }
 
 }
