@@ -5,7 +5,7 @@ public class try1 {
         int ar[] = {1,2,2,3,4,5,6,6,7,8,9};
         int n = -1;
         int l = ar.length;
-        for(int i=0; i<l; i++){
+        for(int i=0; i<l-1; i++){
             if(ar[i]!= ar[i+1]){
                 System.out.println(ar[i]);
             }
