@@ -14,6 +14,10 @@ public class Day01 {
         objday01.Bubblesorted();
         System.out.print(Arrays.toString(objday01.ar) + " ");
 
+        objday01.LinearSearch();
+        objday01.RemoveDuplicates();
+
+
 
     }
     public void Sortedarray(){
@@ -40,5 +44,33 @@ public class Day01 {
                 }
             }
         }
+    }
+
+    public void LinearSearch(){
+        System.out.println();
+        int s = 5;
+        int flag = 0;
+        for(int i=0; i<l; i++){
+            if(ar[i] == s){
+                System.out.println("Element found here " + ar[i]);
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            System.out.println("Element not found in here");
+        }
+    }
+
+    public void RemoveDuplicates(){
+        int rr[] ={1,2,3,3,4,5,5,6,7,7,7,8,9};
+        int j = 0;
+        for(int i=1; i<rr.length; i++){
+            if(rr[j] !=rr[i]){
+                j++;
+                rr[j] = rr[i];
+            }
+        }
+        System.out.println(Arrays.toString(rr));
     }
 }
