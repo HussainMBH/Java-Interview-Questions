@@ -5,16 +5,26 @@ import java.util.Scanner;
 
 public class Day03 {
     public static void main(String[] args){
-        Scanner scn = new Scanner(System.in);
+        String s1 = "Mohamed Bahir Hussain";
+        //s1 = s1.replaceFirst("Mohamed", "Ahamed");
+        System.out.println(s1);
 
-        int a[] = new int[6];
-        System.out.println("Enter numbers");
+        String cw = "Mohamed";
 
-        for (int i=0; i<a.length; i++){
-            int n = scn.nextInt();
+        for(int i=0; i<s1.length(); i++){
+            if(s1.charAt(i) == cw.charAt(0)){
+               for(int j=i; j<cw.length(); j++){
+                   if (cw.charAt(j) == s1.charAt(i)) {
+                       System.out.println("Hello");
+                       break;
+                   }
+               }
+               break;
+            }
+            else {
+                System.out.println("Not find in here");
+
+            }
         }
-        System.out.println(Arrays.toString(a));
-
-
     }
 }
