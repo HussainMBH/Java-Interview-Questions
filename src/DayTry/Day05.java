@@ -5,9 +5,11 @@ import java.util.Arrays;
 public class Day05 {
     public static void main(String[] args){
         int a[] = {5,9,7,6,8,3,5,7,5,8,1,4};
+        int l = a.length;
         System.out.println("Find Largest Element by using loop: " + findlargestnumber(a));
         System.out.println("Find Largest Element by using sorting: " + findlargestbysort(a));
         System.out.println(seconlargestelement(a));
+        System.out.println(checksorted(a,l));
     }
 
     static int findlargestnumber(int a[]){
@@ -41,5 +43,15 @@ public class Day05 {
             }
         }
         return scnflargest;
+    }
+
+    static boolean checksorted(int a[], int l){
+        
+        for(int i=1; i<l; i++){
+            if(a[i]<a[i-1]){
+                return false;
+            }
+        }
+        return true;
     }
 }
