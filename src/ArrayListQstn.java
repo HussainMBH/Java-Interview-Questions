@@ -6,6 +6,9 @@ public class ArrayListQstn {
         for(int i= 0; i<=10; i++){
             alist.add(i);
         }
+        alist.add(5);
+        alist.add(6);
+        alist.remove(3);
         System.out.println(alist);
     }
 }
