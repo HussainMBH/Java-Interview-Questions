@@ -1,11 +1,38 @@
 package DayTry;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Day09 {
     public static void main(String[] args){
         Day09 objday9 = new Day09();
         objday9.substring();
+        objday9.striptrailing();
+    }
+
+    void striptrailing(){
+        String a = "Hardwork never fails         ";
+        System.out.println(a + " - " + a.length());
+        a = a.stripTrailing();
+        System.out.println("Default Striptrailing: "+a);
+        int end = 0;
+        int count = 0;
+        for(int i=a.length()-1; i>=0; i++){
+            if(a.charAt(i) == ' '){
+                continue;
+            }
+            else {
+                end = i;
+                break;
+            }
+        }
+        for(int i=0; i<end; i++){
+            System.out.print(a.charAt(i));
+            count++;
+        }
+        System.out.println();
+        System.out.println(count);
+
     }
 
     void substring(){
