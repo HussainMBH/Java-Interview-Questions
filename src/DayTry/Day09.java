@@ -20,10 +20,13 @@ public class Day09 {
         int ending = scn.nextInt();
 
         for(int i=starting; i<ending; i++){
-
+            System.out.print(aa.charAt(i));
             char ch = aa.charAt(i);
             ch = (char)(ch-32);
-            System.out.print(ch);
+            System.out.println(ch);
         }
+
+        aa = aa.replace("n", "M");
+        System.out.println(aa);
     }
 }
