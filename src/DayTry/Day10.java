@@ -9,6 +9,17 @@ public class Day10 {
         objday10.findduplicate();
         objday10.removeduplicate();
         objday10.striptrailing();
+        objday10.reversestring();
+    }
+
+    void reversestring(){
+        String s = "Mohamed Bahir Hussain";
+        int l = s.length();
+        StringBuffer sb = new StringBuffer();
+        sb.append(s);
+        System.out.println(sb.reverse());
+        int a[] = {9,5,4,7,10,3,4,6,2,5,7,1,8};
+
     }
 
     void striptrailing(){
