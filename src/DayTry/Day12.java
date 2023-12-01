@@ -1,9 +1,26 @@
 package DayTry;
 
+import java.util.Arrays;
+
 public class Day12 {
     public static void main(String[] args) {
         Day12 objday12 = new Day12();
         objday12.linearsearching();
+        objday12.bubblesorting();
+    }
+
+    void bubblesorting(){
+        int a[] = {8,3,7,9,10,5,6,2,1,4};
+        for (int i=a.length - 1; i>=0; i--){
+            for (int j=0; j<=i-1; j++){
+                if(a[j] >a[j+1]){
+                    int tmp = a[j+1];
+                    a[j+1] = a[j];
+                    a[j] = tmp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(a));
     }
 
     void linearsearching(){
