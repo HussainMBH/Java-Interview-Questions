@@ -15,6 +15,26 @@ public class Day11 {
             }
         }
         reverse(a1, 0, end);
+        System.out.println();
+
+        Day11 objday11 = new Day11();
+        objday11.linearsearch();
+    }
+
+    void linearsearch(){
+        int a[] = {8,10,6,7,3,4,1,5,2,9};
+        int key = 12;
+        int flag = 0;
+        for(int i=0; i<a.length; i++){
+            if(key == a[i]){
+                System.out.println("Your element found here");
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0) {
+            System.out.println("Your element not found here");
+        }
     }
 
     private static void reverse(String a1, int start, int end){
