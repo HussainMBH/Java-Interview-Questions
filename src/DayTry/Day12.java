@@ -12,7 +12,7 @@ public class Day12 {
     }
 
     void removeduplicate(){
-        int a[] = {8,3,7,9,10,5,8,6,2,2,1,4};
+        int a[] = {8,3,7,9,10,5,8,6,2,2,1,4,11,11};
         HashSet<Integer> hs = new HashSet<>();
         for (int i=0; i<=a.length-1; i++){
             for (int j=1; j<a.length; j++){
