@@ -8,7 +8,23 @@ public class Day14 {
         objday.selectionsorting();
         objday.bubblesorting();
         objday.binarysearch();
+        objday.changetouppercase();
     }
+    void changetouppercase(){
+        String s = "MOhAMeD BAhIr HuSsaIN";
+        for (int i=0; i<s.length(); i++){
+            char ch = s.charAt(i);
+            if(ch>='A' && ch<='Z'){
+                ch = (char) (ch + 32);
+                System.out.print(ch);
+            }
+            else {
+                System.out.print(ch);
+            }
+        }
+
+    }
+
     void selectionsorting(){
         int a[] = {5,9,7,3,1,10,4,8,2,6};
         int l = a.length;
