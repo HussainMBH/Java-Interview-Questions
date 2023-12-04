@@ -7,6 +7,7 @@ public class Day14 {
         Day14 objday = new Day14();
         objday.selectionsorting();
         objday.bubblesorting();
+        objday.binarysearch();
     }
     void selectionsorting(){
         int a[] = {5,9,7,3,1,10,4,8,2,6};
@@ -39,5 +40,30 @@ public class Day14 {
             }
         }
         System.out.println(Arrays.toString(a));
+    }
+
+    void binarysearch(){
+        int a[] = {10,20,30,40,50,60,70,80,90};
+        int key = 100;
+        int lb = 0;
+        int ub = a.length-1;
+        int flag = 0;
+        while (lb<=ub){
+            int mid = (lb+ub)/2;
+            if(a[mid] == key){
+                System.out.println("Found at " + mid);
+                flag = 1;
+                break;
+            } else if (mid < key) {
+                lb = mid +1;
+
+            } else if (mid > key) {
+                ub = mid -1;
+            }
+        }
+        if(flag == 0){
+            System.out.println("element not found");
+        }
+
     }
 }
