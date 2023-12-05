@@ -9,13 +9,94 @@ public class Day14 {
         objday.bubblesorting();
         objday.binarysearch();
         objday.changetouppercase();
+        System.out.println();
+        objday.findsortedarray();
+        objday.braceboxpattern();
+        objday.changetolawercase();
+        System.out.println();
+        objday.countwords();
     }
+    void countwords() {
+        String s = "mOHAMED bAHIR hUSSAIN";
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (ch == ' ' && (i + 1 < s.length()) && s.charAt(i + 1) != ' ') {
+                count++;
+            }
+        }
+        // Increment count for the last word if the string is not empty
+        if (!s.isEmpty()) {
+            count++;
+        }
+        System.out.println(count);
+    }
+//    void countwords(){
+//        String s = "mOHAMED bAHIR hUSSAIN";
+//        int count = 0;
+//        for(int i=0; i<s.length(); i++){
+//            char ch = s.charAt(i);
+//            if(ch == ' ' && ch + 1 != ' '){
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
+//
+//    }
+
+    void changetolawercase(){
+        String s = "HELLO MOHAMED BAHIR HUSSAIN";
+
+        for(int i=0; i<s.length(); i++){
+            char ch = s.charAt(i);
+            if(ch>= 'A' && ch<= 'Z'){
+                ch = (char) (ch+32);
+                System.out.print(ch);
+            }
+            else {
+                System.out.print(ch);
+            }
+        }
+    }
+
+    void braceboxpattern(){
+        char a = '{', b = '}';
+        int key = 3;
+        for(int i=1; i<=key; i++){
+            for(int j=1; j<=i; j++){
+                for(int k=1; k<=j; k++){
+                    System.out.print(a);
+                }
+                for(int k=1; k<=j; k++){
+                    System.out.print(b);
+                }
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+    void findsortedarray(){
+        int a[] = {1,2,3,4,5,7,8};
+        for(int i=0; i<a.length - 1; i++){
+            if (a[i] <a[i+1]){
+                continue;
+            }
+            else {
+                System.out.println("It's not sorted array");
+            }
+        }
+    }
+
     void changetouppercase(){
         String s = "MOhAMeD BAhIr HuSsaIN";
         for (int i=0; i<s.length(); i++){
             char ch = s.charAt(i);
             if(ch>='A' && ch<='Z'){
                 ch = (char) (ch + 32);
+                System.out.print(ch);
+            }
+            else if(ch>='a' && ch<='z') {
+                ch = (char) (ch -32);
                 System.out.print(ch);
             }
             else {
