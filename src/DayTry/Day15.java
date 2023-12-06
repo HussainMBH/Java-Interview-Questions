@@ -8,6 +8,32 @@ public class Day15 {
         obj.binarysearch();
         obj.selectionsort();
         obj.bublesorting();
+        obj.findlargestelement();
+        obj.secondlargestelement();
+    }
+
+    void secondlargestelement(){
+        int a[] = {8,5,7,9,3,6,1,4,10,2};
+        int max = Integer.MIN_VALUE;
+        int scndmaxx = Integer.MIN_VALUE;
+        for(int i=0; i<a.length; i++){
+            if(a[i] > max && a[i] != max){
+                scndmaxx = max;
+                max = a[i];
+            }
+        }
+        System.out.println(scndmaxx + " " + max);
+    }
+
+    void findlargestelement(){
+        int a[] = {8,5,7,9,3,6,1,4,10,2};
+        int max = Integer.MIN_VALUE;
+        for(int i=0; i<a.length; i++){
+            if(a[i] > max){
+                max = a[i];
+            }
+        }
+        System.out.println(max);
     }
 
     void bublesorting(){
