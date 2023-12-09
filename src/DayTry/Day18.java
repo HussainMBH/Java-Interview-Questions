@@ -1,9 +1,28 @@
 package DayTry;
 
+import java.util.Arrays;
+
 public class Day18 {
     public static void main(String[] args) {
         Day18 obj = new Day18();
         obj.checkdword();
+        obj.selectionsort();
+    }
+
+    void selectionsort(){
+        int a[] = {10,5,4,7,8,3,9,2,1,6};
+        for(int i=0; i<a.length; i++){
+            int min = i;
+            for(int j=i+1; j<a.length; j++){
+                if(a[j] < a[min]){
+                    min = j;
+                }
+            }
+            int tmp = a[min];
+            a[min] = a[i];
+            a[i] = tmp;
+        }
+        System.out.println(Arrays.toString(a));
     }
 
     void checkdword(){
