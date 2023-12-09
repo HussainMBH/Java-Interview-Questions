@@ -12,11 +12,14 @@ public class Day19 {
     }
 
     public static void main(String[] args) {
+
         Day19 obj = new Day19("Biscuits", 150, 25);
         Day19 objscnd = new Day19("Soap", 200, 30);
         obj.sell();
         objscnd.sell();
+
     }
+
 
     void sell(){
         System.out.println("Our selling product is " + name + ".");
