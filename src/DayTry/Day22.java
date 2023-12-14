@@ -6,8 +6,32 @@ public class Day22 {
     public static void main(String[] args) {
         Day22 obj = new Day22();
         obj.binarysearch();
+        obj.removebackspace();
     }
 
+    void removebackspace(){
+        String a = "Mohamed Bahir Hussain          ";
+        System.out.println(a.length());
+        int count = 0;
+        int end = 0;
+        for(int i= a.length()-1; i>0; i--){
+            char ch = a.charAt(i);
+            if(ch == ' '){
+                continue;
+            }
+            else {
+                end = i;
+                break;
+            }
+        }
+        for(int i=0; i<=end; i++){
+            char ch = a.charAt(i);
+            count++;
+            System.out.print(ch);
+
+        }
+        System.out.println(count);
+    }
 
     void binarysearch(){
         int a[] = {8,3,4,5,7,9,1,2,6,10};
