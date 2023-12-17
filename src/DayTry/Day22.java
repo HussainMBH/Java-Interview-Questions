@@ -7,6 +7,35 @@ public class Day22 {
         Day22 obj = new Day22();
         obj.binarysearch();
         obj.removebackspace();
+        obj.removeunwantedspace();
+        System.out.println();
+        obj.firstrepeatedchar();
+    }
+
+    void firstrepeatedchar(){
+        String a = "Mohamed Bahir Hussain";
+        for(int i=0; i<=a.length()-1; i++){
+            for(int j=i+1; j<=a.length()-1; j++){
+                if(a.charAt(i) == a.charAt(j)){
+                    System.out.println("Repeated character "+a.charAt(j) +" found at here");
+                }
+            }
+        }
+    }
+
+    void removeunwantedspace(){
+        String a = "Mohamed     Bahir      Hussain          ";
+        boolean firstspace = false;
+        for(int i=0; i<=a.length() -1; i++){
+            char ch = a.charAt(i);
+            if(ch != ' '){
+                System.out.print(ch);
+                firstspace = true;
+            } else if(firstspace == true) {
+                System.out.print(ch);
+                firstspace = false;
+            }
+        }
     }
 
     void removebackspace(){
