@@ -6,7 +6,41 @@ public class Day26 {
     public static void main(String[] args) {
         sorting();
         bubblesort();
+        findduplicateltr();
     }
+
+    static void findduplicateltr(){
+        String s = "abanskbkbkdsb";
+        int flag = 0;
+
+        for(int i=0; i<s.length(); i++){
+            char ch = s.charAt(i);
+            for(int j=i+1; j<s.length(); j++){
+                if(ch == s.charAt(j)){
+                    System.out.println("element matched " + s.charAt(j));
+                    flag = 1;
+                    break;
+                }
+            }
+        }
+        if(flag == 0){
+            System.out.println("element missing");
+        }
+    }
+
+    static void movezero(){
+        int a[] = {0,5,7,9,0,6,4,3,0,3,4,0,3,4,0};
+        int count = 0;
+        for(int i=0; i<a.length; i++){
+            if(a[i] != 0){
+                count++;
+            }
+        }
+        for(int i=0; i<count; i++){
+
+        }
+    }
+
 
     static void bubblesort(){
         int a[] = {5,7,9,3,4,2,1,6,10,8};
