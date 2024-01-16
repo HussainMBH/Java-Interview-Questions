@@ -1,9 +1,27 @@
 package DayTry;
 
+import java.util.Scanner;
+
 public class Day27 {
     public static void main(String[] args) {
         findlargest();
         findsmallest();
+        findoddoreven();
+    }
+
+    static void findoddoreven(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter Number: ");
+        int a = scn.nextInt();
+        if(a%2==0 && a!= 0){
+            System.out.println("Number " + a + " is a even number.");
+        }
+        else if(a%2 !=0){
+            System.out.println("Number " + a + " is a odd number.");
+        }
+        else {
+            System.out.println("Don't enter number 0.");
+        }
     }
 
     static void findsmallest(){
