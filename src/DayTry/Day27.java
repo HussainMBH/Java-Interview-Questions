@@ -20,7 +20,7 @@ public class Day27 {
             System.out.println("Number " + a + " is a odd number.");
         }
         else {
-            System.out.println("Don't enter number 0.");
+            System.out.println("Invalid");
         }
     }
 
