@@ -7,6 +7,18 @@ public class Day31 {
         removeduplicate();
         System.out.println();
         findduplicate();
+        reverseinteger();
+    }
+
+    static void reverseinteger(){
+        int a = 123456;
+        int rev = 0;
+        while (a > 0){
+            int tmp = a%10;
+            rev = rev*10 + tmp;
+            a = a/10;
+        }
+        System.out.println(rev);
     }
 
     static void findduplicate(){
