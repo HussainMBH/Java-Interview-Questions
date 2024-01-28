@@ -8,6 +8,7 @@ public class ArrayListQstn {
         }
         alist.add(5);
         alist.add(6);
+        alist.add(2);
         alist.remove(3);
         System.out.println(alist);
     }
