@@ -7,6 +7,7 @@ public class BinarySearch {
         int lb = 0;
         int ub = l-1;
         int flag = 0;
+int tmp = 0;
         Scanner scn = new Scanner(System.in);
         int key = scn.nextInt();
         while (lb<=ub){
