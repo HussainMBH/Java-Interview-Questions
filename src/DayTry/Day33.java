@@ -9,6 +9,10 @@ public class Day33 {
         checkarray();
     }
 
+    static void findsecond(){
+
+    }
+
     static void removeduplicate(){
         int a[] = {3,5,7,1,6,5};
         int flag = -1;
@@ -26,8 +30,8 @@ public class Day33 {
 
     static void checkarray(){
         int ab[] = {1,2,3};
-        int a[] = {5,8,3,4,9,3,10,7,2,6};
-        Arrays.sort(ab);
+        int a[] = {5,8,3,4,9,10,7,2,6};
+        Arrays.sort(a);
         System.out.println(Arrays.toString(ab));
         int flag = 0;
         for(int i=0; i<a.length-1; i++){
