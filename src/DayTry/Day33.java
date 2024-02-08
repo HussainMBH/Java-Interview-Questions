@@ -43,7 +43,7 @@ public class Day33 {
             }
         }
         if(flag == 0){
-            System.out.println("It's sorted array");
+            System.out.println("It's clearly sorted array");
         }
         else {
             System.out.println("It's not sorted array");
