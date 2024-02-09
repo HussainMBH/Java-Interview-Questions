@@ -2,7 +2,7 @@ package OOP_Java.Inheritance.InheritanceOOP;
 
 public class Dad {
     public static void main(String[] args) {
-        System.out.println("Hello i'm john's dad");
+        System.out.println("Hello i'm john, dad of peter");
     }
 
     static void money(){
