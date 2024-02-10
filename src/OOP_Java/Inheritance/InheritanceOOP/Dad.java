@@ -1,8 +1,12 @@
 package OOP_Java.Inheritance.InheritanceOOP;
 
-public class Dad {
+public class Dad extends Grandpa {
     public static void main(String[] args) {
         System.out.println("Hello i'm john, dad of peter");
+        money();
+        Car();
+        Bank();
+
     }
 
     static void money(){
