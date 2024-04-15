@@ -5,6 +5,9 @@ public class Day36 {
         linearsearch();
     }
 
+    
+
+
     static void linearsearch(){
         int key = 16;
         int a [] = {4,7,3,5,6,9,1,3,2};
